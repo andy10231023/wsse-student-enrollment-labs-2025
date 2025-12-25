@@ -1,9 +1,9 @@
 openapi: "3.0.0"
 info:
   title: "Hello API"
-  version "0.1.0":
+  version: "0.1.0"
 servers:
-  - url:"https://api.example.edu/api/v1"
+  - url: "https://api.example.edu/api/v1"
     description: "Production"
 
 tags:
@@ -12,7 +12,7 @@ tags:
 externalDocs:
   description: "本課程手冊"
   url: "https://example.edu/wsse/handbook"
-  
+
 paths:
   /health:
     get:
@@ -27,4 +27,6 @@ paths:
               schema:
                 type: object
                 properties:
-                  status: { type: string, example: "ok"}
+                  status:
+                    type: string
+                    example: "ok"
